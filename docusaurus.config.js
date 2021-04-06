@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
-  projectName: 'fpsmath', // Usually your repo name.
+  projectName: 'fpsmath-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'FPSMath',
