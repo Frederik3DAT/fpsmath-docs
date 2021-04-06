@@ -13,7 +13,7 @@ module.exports = {
       type: 'category',
       label: 'Commands',
       items: [
-        'overview'
+        'commands/overview'
       ]
     }
   ],
