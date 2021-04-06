@@ -1,0 +1,17 @@
+{
+  "unversionedId": "invite-to-server",
+  "id": "invite-to-server",
+  "isDocsHomePage": false,
+  "title": "Invite to Server",
+  "description": "Step 1: Click",
+  "source": "@site/docs/invite-to-server.md",
+  "slug": "/invite-to-server",
+  "permalink": "/docs/invite-to-server",
+  "editUrl": "https://github.com/animafps/fpsmath-docs/edit/master/docs/docs/invite-to-server.md",
+  "version": "current",
+  "sidebar": "docs",
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/"
+  }
+}

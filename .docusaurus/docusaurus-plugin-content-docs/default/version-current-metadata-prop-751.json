@@ -12,6 +12,11 @@
         "items": [
           {
             "type": "link",
+            "label": "Invite to Server",
+            "href": "/docs/invite-to-server"
+          },
+          {
+            "type": "link",
             "label": "Getting Started",
             "href": "/docs/"
           },
@@ -49,6 +54,7 @@
     "/docs/create-a-document": "docs",
     "/docs/create-a-page": "docs",
     "/docs/": "docs",
+    "/docs/invite-to-server": "docs",
     "/docs/markdown-features": "docs",
     "/docs/thank-you": "docs"
   }

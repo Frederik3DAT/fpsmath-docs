@@ -94,7 +94,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','1e2'),
+  component: ComponentCreator('/docs','ea6'),
   
   routes: [
 {
@@ -115,6 +115,11 @@ export default [
 {
   path: '/docs/create-a-page',
   component: ComponentCreator('/docs/create-a-page','486'),
+  exact: true,
+},
+{
+  path: '/docs/invite-to-server',
+  component: ComponentCreator('/docs/invite-to-server','2fb'),
   exact: true,
 },
 {

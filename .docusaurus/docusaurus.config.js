@@ -7,13 +7,13 @@ export default {
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "AnimaFPS",
-  "projectName": "fpsmath",
+  "projectName": "fpsmath-docs",
   "themeConfig": {
     "navbar": {
       "title": "FPSMath",
       "logo": {
         "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "src": "img/fpsmath.png"
       },
       "items": [
         {

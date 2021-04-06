@@ -23,6 +23,10 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "invite-to-server"
+                  },
+                  {
+                    "type": "doc",
                     "id": "getting-started"
                   },
                   {
@@ -54,6 +58,7 @@
             "/docs/create-a-document": "docs",
             "/docs/create-a-page": "docs",
             "/docs/": "docs",
+            "/docs/invite-to-server": "docs",
             "/docs/markdown-features": "docs",
             "/docs/thank-you": "docs"
           },
@@ -133,9 +138,30 @@
               "editUrl": "https://github.com/animafps/fpsmath-docs/edit/master/docs/docs/getting-started.md",
               "version": "current",
               "sidebar": "docs",
+              "previous": {
+                "title": "Invite to Server",
+                "permalink": "/docs/invite-to-server"
+              },
               "next": {
                 "title": "Create a Page",
                 "permalink": "/docs/create-a-page"
+              }
+            },
+            {
+              "unversionedId": "invite-to-server",
+              "id": "invite-to-server",
+              "isDocsHomePage": false,
+              "title": "Invite to Server",
+              "description": "Step 1: Click",
+              "source": "@site/docs/invite-to-server.md",
+              "slug": "/invite-to-server",
+              "permalink": "/docs/invite-to-server",
+              "editUrl": "https://github.com/animafps/fpsmath-docs/edit/master/docs/docs/invite-to-server.md",
+              "version": "current",
+              "sidebar": "docs",
+              "next": {
+                "title": "Getting Started",
+                "permalink": "/docs/"
               }
             },
             {

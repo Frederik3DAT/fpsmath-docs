@@ -14,7 +14,7 @@ module.exports = {
       title: 'FPSMath',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/fpsmath.png',
       },
       items: [
         {

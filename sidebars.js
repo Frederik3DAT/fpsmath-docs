@@ -4,6 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       items: [
+        'invite-to-server',
         'getting-started',
         'create-a-page',
         'create-a-document',

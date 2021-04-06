@@ -31,6 +31,11 @@
               "sidebar": "docs"
             },
             {
+              "id": "invite-to-server",
+              "path": "/docs/invite-to-server",
+              "sidebar": "docs"
+            },
+            {
               "id": "markdown-features",
               "path": "/docs/markdown-features",
               "sidebar": "docs"
