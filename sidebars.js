@@ -9,5 +9,12 @@ module.exports = {
         'markdown-features'
       ],
     },
+    {
+      type: 'category',
+      label: 'Commands',
+      items: [
+        'overview'
+      ]
+    }
   ],
 };
