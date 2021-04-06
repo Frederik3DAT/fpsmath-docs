@@ -1,28 +1,15 @@
 ---
 title: Getting Started
-slug: /
 ---
 
-## Step 1: Generate a new Docusaurus site
+:::caution IMPORTANT
+You must have the Manage Server or Administrator permission to add a bot to a server.
+:::
 
-If you haven't already, generate a new Docusaurus site using the classic template:
+## Steps to Invite
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
+Just 4 easy steps away from converting in your own server. Let's go!
 
-## Step 2: Start your Docusaurus site
+### 1. Click the Link
 
-Run the development server in the newly created `my-website` folder:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Open `docs/getting-started.md` and edit some lines. The site reloads automatically and display your changes.
-
-## That's it!
-
-Congratulations! You've successfully run and modified your Docusaurus project.
+[THE LINK](/invite)

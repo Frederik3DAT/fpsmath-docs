@@ -2,15 +2,11 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Introduction',
       items: [
-        'invite-to-server',
-        'getting-started',
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
+        'welcome',
+        'getting-started', 
+        'markdown-features'
       ],
     },
   ],

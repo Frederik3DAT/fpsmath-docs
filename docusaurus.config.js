@@ -13,7 +13,7 @@ module.exports = {
     navbar: {
       title: 'FPSMath',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'FPSMath\'s logo',
         src: 'img/fpsmath.png',
       },
       items: [
@@ -23,7 +23,16 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/commands/overview',
+          label: 'Commands',
+          poition: 'left',
+        },
+        {
+          to: 'invite',
+          label: 'Invite',
+          poition: 'left',
+        },
         {
           href: 'https://github.com/AnimaFPS/fpsmath',
           label: 'GitHub',
@@ -50,27 +59,23 @@ module.exports = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/AnimaFPS',
-            },
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/AnimaFPS/fpsmath',
             },
+            {
+              label: 'Docs - Source/Github',
+              href: 'https://github.com/AnimaFPS/fpsmath-docs'
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} AnimaFPS, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} FPSMath.`,
     },
   },
   presets: [
@@ -81,17 +86,25 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/animafps/fpsmath-docs/edit/master/docs/',
+            'https://github.com/animafps/fpsmath-docs/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/animafps/fpsmath-docs/edit/master/blog/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+      },
+    ],
+  ],
+  plugins: [
+    // ... Your other plugins.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        indexBlog: false,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+        // When applying `zh` in language, please install `nodejieba` in your project.
       },
     ],
   ],
