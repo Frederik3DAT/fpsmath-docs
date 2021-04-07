@@ -9,12 +9,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
   projectName: 'fpsmath-docs', // Usually your repo name.
-  scripts: [
-    {
-      src: "https://kit.fontawesome.com/57eed046e7.js",
-      async: true,
-    },
-  ],
   themeConfig: {
     colorMode: {
       // "light" | "dark"
