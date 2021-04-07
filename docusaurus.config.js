@@ -9,7 +9,17 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
   projectName: 'fpsmath-docs', // Usually your repo name.
+  stylesheets: [ '/src/css/heading.css'],
+  scripts: [
+    "https://kit.fontawesome.com/57eed046e7.js"
+  ],
   themeConfig: {
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: "dark"
+    },
+    respectPrefersColorScheme: true,
+    hideableSidebar: true,
     navbar: {
       title: 'FPSMath',
       logo: {
@@ -35,8 +45,9 @@ module.exports = {
         },
         {
           href: 'https://github.com/AnimaFPS/fpsmath',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -50,6 +61,10 @@ module.exports = {
               label: 'Getting Started',
               to: 'docs/',
             },
+            {
+              label: 'Commands',
+              to: 'docs/commands/overview'
+            }
           ],
         },
         {

@@ -1,0 +1,369 @@
+---
+title: Commands - Math
+sidebar_label: Math
+---
+
+## Usage Key
+
+For commands that accept input, you'll see keys with the following:
+
+- `<required>` - parameters between `<>` must be included with the command
+- `[optional]` - parameters between `[]` are optional parameters and may be excluded
+- a | or | b - | means that you can use the parameters on either side of the symbol
+- repeat... - means that you can provide multiple parameters as input
+
+These may be nested. Example: `[parameter1 <parameter2\>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
+
+## Commands
+
+---
+
+### cm
+
+Converts Sensitivity to cm/rev
+
+#### Usage
+
+```text
+/cm <sens> <game | yaw value> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+import {
+  DiscordMention,
+  DiscordMessage,
+  DiscordMessages,
+} from "../../node_modules/@danktuary/react-discord-message";
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/cm 3 ow 1600</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 28.86 cm/rev
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/cm 2 0.022 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 25.97727273 cm/rev
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+cm/rev, cm/360
+```
+
+---
+
+### deg
+
+Converts Sensitivity to deg/mm
+
+#### Usage
+
+```text
+/deg <sens> <game | yaw value> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/deg 3 ow 1600</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 deg/mm
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/deg 2 0.022 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 deg/mm
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+deg/mm
+```
+
+---
+
+### mpi
+
+Converts Sensitivity to mpi(mrad/inch)
+
+#### Usage
+
+```text
+/mpi <sens> <game | yaw value> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/mpi 3 ow 1600</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 mpi
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/mpi 2 0.022 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 mpi
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+mrad, milliradian, mrad/inch, milliradian/inch
+```
+
+---
+
+### inch
+
+Converts sensitivty to inch/rev(inch/360)
+
+#### Usage
+
+```text
+/inch <sens> <game | yaw value> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/inch 3 ow 1600</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/360
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/inch 2 0.022 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/360
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+inch/360, inch/rev
+```
+
+---
+
+### convert
+
+Converts different sensitivities from one game or yaw value to another
+
+#### Usage
+
+```text
+/convert <sens> <input game | yaw> <output game | yaw>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/convert 6 wz 0.022</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.80000
+  </DiscordMessage>
+</DiscordMessages>
+
+---
+
+### fov
+
+Finds the true vertical and horizontal FOVs for certain aspect ratio that the game is being rendered at and game/FOV scaling method(FILM notation)
+
+[To learn about FILM notation click here](https://www.kovaak.com/film-notation)
+
+#### Usage
+
+```text
+/fov <fov> <fov> <gamename | FILM notation> <aspect ratio>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/fov 90 4ML3 16:19</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, Horizontal FOV:
+    64.551
+    <br />
+    Vertical FOV: 73.740
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/fov 103 ow 1920:1440</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, Horizontal FOV:
+    103.000
+    <br />
+    Vertical FOV: 56.631
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+fov-scaling, film, fovscailing
+```
+
+---
+
+### focal
+
+Focal Length Scales a desired sensitivity between 2 fov values of the same type/ game
+
+#### Usage
+
+```text
+/focal <sens> <old fov> <new fov>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/focal 0.95 90 100</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.13217
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+focal-scailing, visomotor, focalscailing
+```
+
+---
+
+### sens
+
+Converts cm/rev(default), deg/mm, inch/rev, mpi or arcmin to a game sensitivity
+
+:::warning
+arcmin not implemented
+:::
+
+#### Usage
+
+```text
+sens <cm/rev | deg/mm | inch/rev | mpi | arcmin> <game | yaw> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-cm // if the input value's unit is cm/rev it is the default and optional
+-deg // if the inpit value's unit is deg/mm
+-inch // if the inpit value's unit is inch/rev
+-mpi // if the inpit value's unit is mpi
+-arcmin // if the inpit value's unit is arcmin
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/sens 28.5 quake 1600</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 0.91148
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+sens-cm, sens-deg, sens-inch, senscm, sensdeg, sensinch, sensmpi, sens-mpi, sensarcmin, sens-arcmin
+```
