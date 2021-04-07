@@ -54,4 +54,3 @@ jobs:
           npm i
           fi
           npm run deploy
-          echo "fpsmath.animafps.xyz" > CNAME

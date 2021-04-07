@@ -16,7 +16,7 @@ These may be nested. Example: `[parameter1 <parameter2\>]` means that the input 
 
 ## Commands
 
----
+
 
 ### cm
 
@@ -67,7 +67,7 @@ import {
 cm/rev, cm/360
 ```
 
----
+
 
 ### deg
 
@@ -112,7 +112,7 @@ Converts Sensitivity to deg/mm
 deg/mm
 ```
 
----
+
 
 ### mpi
 
@@ -157,7 +157,7 @@ Converts Sensitivity to mpi(mrad/inch)
 mrad, milliradian, mrad/inch, milliradian/inch
 ```
 
----
+
 
 ### inch
 
@@ -202,7 +202,7 @@ Converts sensitivty to inch/rev(inch/360)
 inch/360, inch/rev
 ```
 
----
+
 
 ### convert
 
@@ -233,7 +233,7 @@ Converts different sensitivities from one game or yaw value to another
   </DiscordMessage>
 </DiscordMessages>
 
----
+
 
 ### fov
 
@@ -286,7 +286,7 @@ Finds the true vertical and horizontal FOVs for certain aspect ratio that the ga
 fov-scaling, film, fovscailing
 ```
 
----
+
 
 ### focal
 
@@ -323,20 +323,17 @@ Focal Length Scales a desired sensitivity between 2 fov values of the same type/
 focal-scailing, visomotor, focalscailing
 ```
 
----
+
 
 ### sens
 
-Converts cm/rev(default), deg/mm, inch/rev, mpi or arcmin to a game sensitivity
+Converts cm/rev(default), deg/mm, inch/rev, mpi to a game sensitivity
 
-:::warning
-arcmin not implemented
-:::
 
 #### Usage
 
 ```text
-sens <cm/rev | deg/mm | inch/rev | mpi | arcmin> <game | yaw> <cpi>
+sens <cm/rev | deg/mm | inch/rev | mpi > <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -346,7 +343,6 @@ sens <cm/rev | deg/mm | inch/rev | mpi | arcmin> <game | yaw> <cpi>
 -deg // if the inpit value's unit is deg/mm
 -inch // if the inpit value's unit is inch/rev
 -mpi // if the inpit value's unit is mpi
--arcmin // if the inpit value's unit is arcmin
 ```
 
 #### Examples
@@ -365,5 +361,5 @@ sens <cm/rev | deg/mm | inch/rev | mpi | arcmin> <game | yaw> <cpi>
 #### Aliases
 
 ```text
-sens-cm, sens-deg, sens-inch, senscm, sensdeg, sensinch, sensmpi, sens-mpi, sensarcmin, sens-arcmin
+sens-cm, sens-deg, sens-inch, senscm, sensdeg, sensinch, sensmpi, sens-mpi
 ```

@@ -4,12 +4,11 @@ module.exports = {
   tagline: 'The best calculations for anything FPS and more',
   url: 'https://fpsmath.animafps.xyz',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
   projectName: 'fpsmath-docs', // Usually your repo name.
-  stylesheets: [ '/src/css/heading.css'],
   scripts: [
     "https://kit.fontawesome.com/57eed046e7.js"
   ],
@@ -72,7 +71,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/',
+              href: 'https://discord.gg/xJdQxps',
             },
           ],
         },
@@ -97,6 +96,9 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.

@@ -10,4 +10,8 @@ If you're new to FPSMath, we suggest you follow this guide by clicking "Next" at
 
 ### What is FPSMath
 
+FPSmath is a simple Discord bot powered by Discord.js designed to convert video game sensitivities, fovs, mouse feel across themselves and preset games 
+
 ### Why FPSMath
+
+FPSMath is the only calculation bot for everything to do with 

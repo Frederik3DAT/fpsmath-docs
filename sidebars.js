@@ -1,33 +1,67 @@
 module.exports = {
   docs: [
     {
-      type: 'category',
-      label: 'Introduction',
-      items: [
-        'welcome',
-        'getting-started', 
-      ],
+      type: "link",
+      label: "",
+      href: "/title-fpsmath-docs",
     },
     {
-      type: 'category',
-      label: 'Commands',
-      items: [
-        'commands/overview',
-        'commands/math',
-        'commands/util'
-      ]
+      type: "category",
+      label: "Introduction",
+      items: ["welcome", "getting-started"],
     },
     {
-      type: 'category',
-      label: 'Quick Links',
+      type: "link",
+      label: "",
+      href: "",
+    },
+    {
+      type: "link",
+      label: "Usage",
+      href: "/title-usage",
+    },
+    {
+      type: "category",
+      label: "",
       collapsed: false,
       items: [
         {
-          type: 'link',
-          label: 'Invite link',
-          href: 'https://fpsmath.animafps.xyz/invite'
-        }
-      ]
-    }
+          type: "category",
+          label: "Commands",
+          items: ["commands/overview", "commands/math", "commands/util"],
+        },
+        {
+          type: "doc",
+          id: "games",
+        },
+      ],
+    },
+    {
+      type: "link",
+      label: "",
+      href: "",
+    },
+    {
+      type: "link",
+      label: "Quick Links",
+      href: "/title-links",
+    },
+    {
+      type: "category",
+      label: "",
+      collapsed: false,
+      items: [
+        {
+          type: "link",
+          label: "Invite link",
+          href: "https://fpsmath.animafps.xyz/invite",
+        },
+        {
+          type: "link",
+          label: "Support",
+          href: "https://discord.gg/xJdQxps",
+        },
+      ],
+    },
   ],
 };
