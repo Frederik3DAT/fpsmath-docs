@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'FPSMath Discord bot',
+  title: 'FPSMath Documentation',
   tagline: 'The best calculations for anything FPS and more',
   url: 'https://fpsmath.animafps.xyz',
   baseUrl: '/',
@@ -10,7 +10,10 @@ module.exports = {
   organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
   projectName: 'fpsmath-docs', // Usually your repo name.
   scripts: [
-    "https://kit.fontawesome.com/57eed046e7.js"
+    {
+      src: "https://kit.fontawesome.com/57eed046e7.js",
+      async: true,
+    },
   ],
   themeConfig: {
     colorMode: {
