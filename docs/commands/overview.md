@@ -46,7 +46,7 @@ For commands that accept input, you'll see keys with the following:
 - a | or | b - | means that you can use the parameters on either side of the symbol
 - repeat... - means that you can provide multiple parameters as input
 
-These may be nested. Example: `[parameter1 <parameter2\>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
+These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
 
 :::tip
 Dont worry about memorising this as its on top of all of the command pages
