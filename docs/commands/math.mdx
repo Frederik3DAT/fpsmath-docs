@@ -184,7 +184,7 @@ Converts sensitivty to inch/rev(inch/360)
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/360
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/rev
   </DiscordMessage>
   <DiscordMessage author="Anima">/inch 2 0.022 800 -dp 8</DiscordMessage>
   <DiscordMessage
@@ -192,7 +192,7 @@ Converts sensitivty to inch/rev(inch/360)
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/360
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/rev
   </DiscordMessage>
 </DiscordMessages>
 
@@ -233,7 +233,11 @@ Converts different sensitivities from one game or yaw value to another
   </DiscordMessage>
 </DiscordMessages>
 
+#### Aliases
 
+```text
+convert-sens, convertsens, convert-yaw, convertyaw
+```
 
 ### fov
 
@@ -340,9 +344,9 @@ sens <cm/rev | deg/mm | inch/rev | mpi > <game | yaw> <cpi>
 
 ```text
 -cm // if the input value's unit is cm/rev it is the default and optional
--deg // if the inpit value's unit is deg/mm
--inch // if the inpit value's unit is inch/rev
--mpi // if the inpit value's unit is mpi
+-deg // if the input value's unit is deg/mm
+-inch // if the input value's unit is inch/rev
+-mpi // if the input value's unit is mpi
 ```
 
 #### Examples
