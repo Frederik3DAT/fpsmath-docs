@@ -16,6 +16,109 @@ These may be nested. Example: `[parameter1 <parameter2\>]` means that the input 
 
 ## Commands
 
-:::caution Under Construction
-Coming Soon!
-:::
+### prefix
+
+Shows the command prefix
+
+#### Usage
+
+```text
+/prefix
+```
+
+#### Examples
+
+import {
+  DiscordMention,
+  DiscordMessage,
+  DiscordMessages,
+} from "../../node_modules/@danktuary/react-discord-message";
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/prefix</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, The command prefix
+    is `/`.
+    <br />
+    To run commands, use `/command` or `@FPSMath#9838 command`.
+  </DiscordMessage>
+</DiscordMessages>
+
+### help
+
+Displays a list of available commands, or detailed information for a specified command.
+
+#### Usage
+
+```text
+/help [command]
+```
+
+#### Aliases
+
+```text
+commands
+```
+
+### games
+
+Displays the supported games for this bot
+
+#### Usage
+
+```text
+/games
+```
+
+#### Aliases
+
+```text
+supported-games, supportedgames
+```
+
+### getobject
+
+Displays the object from the array associated for a game
+
+#### Usage
+
+```text
+/getobject <game> <"fovt" | "yaw" | "afovt">
+```
+
+### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/getobject source afovt</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 4ML3
+  </DiscordMessage>
+</DiscordMessages>
+
+### info
+
+Displays the major information about this bot
+
+#### Usage
+
+```text
+/info
+```
+
+### cminfo
+
+Displays an explanation for what cm/rev\(cm/360\) is
+
+#### Usage
+
+```text
+/cminfo
+```

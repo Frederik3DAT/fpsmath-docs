@@ -30,12 +30,12 @@ Below is a shortlist of all the bot commands.
 
 | **Command**                          | **Description **                                                                        |
 | ------------------------------------ | --------------------------------------------------------------------------------------- |
-| [`/prefix`](./util.mdx#prefix)       | Shows or sets the command prefix.                                                       |
+| [`/prefix`](./util.mdx#prefix)       | .                                                       |
 | [`/help`](./util.mdx#help)           | Displays a list of available commands, or detailed information for a specified command. |
 | [`/games`](./util.mdx#games)         | Displays the supported games for this bot                                               |
 | [`/getobject`](./util.mdx#getobject) | Displays the object from the array associated for a game                                |
 | [`/info`](./util.mdx#info)           | Displays the major information about this bot                                           |
-| [`/cminfo `](./util.mdx#cminfo)      | Displays an explaination for what cm/rev (cm/360) is                                    |
+| [`/cminfo `](./util.mdx#cminfo)      | Displays an explanation for what cm/rev \(cm/360\) is                                    |
 
 ## Usage Key
 
@@ -49,5 +49,5 @@ For commands that accept input, you'll see keys with the following:
 These may be nested. Example: `[parameter1 <parameter2\>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
 
 :::tip
-Dont worry about memorising this as its on top of all of the command pages
+Don't worry about memorizing this as its on top of all of the command pages
 :::
