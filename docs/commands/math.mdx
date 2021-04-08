@@ -12,7 +12,7 @@ For commands that accept input, you'll see keys with the following:
 - a | or | b - | means that you can use the parameters on either side of the symbol
 - repeat... - means that you can provide multiple parameters as input
 
-These may be nested. Example: `[parameter1 <parameter2\>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
+These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
 
 ## Commands
 
@@ -184,7 +184,7 @@ Converts sensitivity to inch/rev(inch/360)
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/360
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/rev
   </DiscordMessage>
   <DiscordMessage author="Anima">/inch 2 0.022 800 -dp 8</DiscordMessage>
   <DiscordMessage
@@ -192,7 +192,7 @@ Converts sensitivity to inch/rev(inch/360)
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/360
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/rev
   </DiscordMessage>
 </DiscordMessages>
 
@@ -233,7 +233,11 @@ Converts different sensitivities from one game or yaw value to another
   </DiscordMessage>
 </DiscordMessages>
 
+#### Aliases
 
+```text
+convert-sens, convertsens, convert-yaw, convertyaw
+```
 
 ### fov
 
