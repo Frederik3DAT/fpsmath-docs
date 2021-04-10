@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{85:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return i}));var o=e(0),c=e.n(o);function i(){return Object(o.useEffect)((function(){window.location.href="https://top.gg/bot/792712521546465301/invite/"}),[]),c.a.createElement("p",null,"yep")}}}]);
