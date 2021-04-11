@@ -32,12 +32,12 @@ module.exports = {
         {
           to: 'docs/commands/overview',
           label: 'Commands',
-          poition: 'left',
+          position: 'left',
         },
         {
           to: 'invite',
           label: 'Invite',
-          poition: 'left',
+          position: 'left',
         },
         {
           href: 'https://github.com/AnimaFPS/fpsmath',
@@ -64,7 +64,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Community/ Support',
           items: [
             {
               label: 'Discord',
@@ -80,7 +80,7 @@ module.exports = {
               href: 'https://github.com/AnimaFPS/fpsmath',
             },
             {
-              label: 'Docs - Source/Github',
+              label: 'Github - Docs',
               href: 'https://github.com/AnimaFPS/fpsmath-docs'
             }
           ],
@@ -98,7 +98,6 @@ module.exports = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/animafps/fpsmath-docs/edit/main/',
         },

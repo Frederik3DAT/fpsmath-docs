@@ -3,50 +3,24 @@ title: Commands - Utility
 sidebar_label: Utility
 ---
 
-## Usage Key
-
-For commands that accept input, you'll see keys with the following:
-
-- `<required>` - parameters between `<>` must be included with the command
-- `[optional]` - parameters between `[]` are optional parameters and may be excluded
-- a | or | b - | means that you can use the parameters on either side of the symbol
-- repeat... - means that you can provide multiple parameters as input
-
-These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
-
-## Commands
-
-### prefix
-
-Shows the command prefix
-
-#### Usage
-
-```text
-/prefix
-```
-
-#### Examples
-
 import {
   DiscordMention,
   DiscordMessage,
   DiscordMessages,
 } from "../../node_modules/@danktuary/react-discord-message";
 
-<DiscordMessages>
-  <DiscordMessage author="Anima">/prefix</DiscordMessage>
-  <DiscordMessage
-    author="FPSMath"
-    bot={true}
-    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
-  >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, The command prefix
-    is `/`.
-    <br />
-    To run commands, use `/command` or `@FPSMath#9838 command`.
-  </DiscordMessage>
-</DiscordMessages>
+## Usage Key
+
+For commands that accept input, you'll see keys with the following:
+
+- `<required>` - parameters between `<>` must be included with the command
+- `[optional]` - parameters between `[]` are optional parameters and may be excluded
+- `a | or | b` - `|` means that you can use the parameters on either side of the symbol
+- `repeat...` - means that you can provide multiple parameters as input
+
+These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
+
+## Commands
 
 ### help
 
@@ -87,7 +61,7 @@ Displays the object from the array associated for a game
 #### Usage
 
 ```text
-/getobject <game> <"fovt" | "yaw" | "afovt">
+/getobject <game> <"fovt" | "yaw" | "afovt" | "aliases">
 ```
 
 ### Examples

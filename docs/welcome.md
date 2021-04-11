@@ -14,7 +14,7 @@ FPSmath is a simple Discord bot powered by Discord.js designed to convert video 
 
 ### Why FPSMath
 
-- FPSMath is the only calculation bot for everything to do with video game calcuations
+- FPSMath is the only calculation bot for everything to do with video game calculations
 - Has a lot of games supported
 
 :::caution Under Construction

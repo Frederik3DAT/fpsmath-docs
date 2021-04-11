@@ -3,29 +3,34 @@ title: Commands - Math
 sidebar_label: Math
 ---
 
+import {
+  DiscordMention,
+  DiscordMessage,
+  DiscordMessages,
+} from "../../node_modules/@danktuary/react-discord-message";
+
 ## Usage Key
 
 For commands that accept input, you'll see keys with the following:
 
 - `<required>` - parameters between `<>` must be included with the command
 - `[optional]` - parameters between `[]` are optional parameters and may be excluded
-- a | or | b - | means that you can use the parameters on either side of the symbol
-- repeat... - means that you can provide multiple parameters as input
+- `a | or | b` - `|` means that you can use the parameters on either side of the symbol
+- `repeat...` - means that you can provide multiple parameters as input
 
 These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
 
 ## Commands
 
 
+### arcmin 
 
-### cm
-
-Converts Sensitivity to cm/rev
+Converts sensitivity to arcmin
 
 #### Usage
 
 ```text
-/cm <sens> <game | yaw value> <cpi>
+/arcmin <sens> <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -36,11 +41,42 @@ Converts Sensitivity to cm/rev
 
 #### Examples
 
-import {
-  DiscordMention,
-  DiscordMessage,
-  DiscordMessages,
-} from "../../node_modules/@danktuary/react-discord-message";
+<DiscordMessages>
+  <DiscordMessage author="Anima">/arcmin 4 r6 800</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 0.30558 arcmin
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/arcmin 2 0.032 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 0.85333333 arcmin
+  </DiscordMessage>
+</DiscordMessages>
+
+### cm
+
+Converts Sensitivity to cm/rev(cm/360)
+
+#### Usage
+
+```text
+/cm <sens> <game | yaw> <cpi>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
 
 <DiscordMessages>
   <DiscordMessage author="Anima">/cm 3 ow 1600</DiscordMessage>
@@ -67,8 +103,6 @@ import {
 cm/rev, cm/360
 ```
 
-
-
 ### deg
 
 Converts Sensitivity to deg/mm
@@ -76,7 +110,7 @@ Converts Sensitivity to deg/mm
 #### Usage
 
 ```text
-/deg <sens> <game | yaw value> <cpi>
+/deg <sens> <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -112,8 +146,6 @@ Converts Sensitivity to deg/mm
 deg/mm
 ```
 
-
-
 ### mpi
 
 Converts Sensitivity to mpi(mrad/inch)
@@ -121,7 +153,7 @@ Converts Sensitivity to mpi(mrad/inch)
 #### Usage
 
 ```text
-/mpi <sens> <game | yaw value> <cpi>
+/mpi <sens> <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -157,8 +189,6 @@ Converts Sensitivity to mpi(mrad/inch)
 mrad, milliradian, mrad/inch, milliradian/inch
 ```
 
-
-
 ### inch
 
 Converts sensitivity to inch/rev(inch/360)
@@ -166,7 +196,7 @@ Converts sensitivity to inch/rev(inch/360)
 #### Usage
 
 ```text
-/inch <sens> <game | yaw value> <cpi>
+/inch <sens> <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -201,8 +231,6 @@ Converts sensitivity to inch/rev(inch/360)
 ```text
 inch/360, inch/rev
 ```
-
-
 
 ### convert
 
@@ -290,8 +318,6 @@ Finds the true vertical and horizontal FOVs for certain aspect ratio that the ga
 fov-scaling, film, fovscailing
 ```
 
-
-
 ### focal
 
 Focal Length Scales a desired sensitivity between 2 fov values of the same type/ game
@@ -327,12 +353,9 @@ Focal Length Scales a desired sensitivity between 2 fov values of the same type/
 focal-scaling,focalscailing
 ```
 
-
-
 ### sens
 
 Converts cm/rev(default), deg/mm, inch/rev, mpi to a game sensitivity
-
 
 #### Usage
 
