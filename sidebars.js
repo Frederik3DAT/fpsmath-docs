@@ -59,7 +59,7 @@ module.exports = {
         {
           type: "link",
           label: "Support",
-          href: "https://discord.gg/xJdQxps",
+          href: "https://discord.gg/Bg2gNT35s9",
         },
       ],
     },

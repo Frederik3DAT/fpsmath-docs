@@ -82,8 +82,8 @@ a:not([href]):not([aria-hidden="true"]) {
   border-bottom: #383d3f;
   border-bottom-style: none;
   border-bottom-width: medium;
-  border-width: 1px;
   border-style: inset;
+  border-width: 1px;
   margin: 1.5em 1em;
   padding: 0;
 }
