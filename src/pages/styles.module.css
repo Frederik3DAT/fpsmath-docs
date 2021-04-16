@@ -35,3 +35,12 @@
   height: 200px;
   width: 200px;
 }
+
+.badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  column-gap: 10px;
+}

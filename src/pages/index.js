@@ -64,6 +64,10 @@ export default function Home() {
               Get Started
             </Link>
           </div>
+          <div className={styles.badges}>
+            <img src="https://top.gg/api/widget/status/792712521546465301.svg?noavatar=true"/>
+            <img src="https://top.gg/api/widget/servers/792712521546465301.svg?noavatar=true"/>
+          </div>
         </div>
       </header>
       <main>
