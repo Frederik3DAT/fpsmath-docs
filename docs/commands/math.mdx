@@ -60,6 +60,41 @@ Converts sensitivity to arcmin
   </DiscordMessage>
 </DiscordMessages>
 
+### convert
+
+Converts different sensitivities from one game or yaw value to another
+
+#### Usage
+
+```text
+/convert <sens> <input game | yaw> <output game | yaw>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/convert 6 wz 0.022</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.80000
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+convert-sens, convertsens, convert-yaw, convertyaw
+```
+
 ### cm
 
 Converts Sensitivity to cm/rev(cm/360)
@@ -189,14 +224,14 @@ Converts Sensitivity to mpi(mrad/inch)
 mrad, milliradian, mrad/inch, milliradian/inch
 ```
 
-### inch
+### focal
 
-Converts sensitivity to inch/rev(inch/360)
+Focal Length Scales a desired sensitivity between 2 fov values of the same type/ game
 
 #### Usage
 
 ```text
-/inch <sens> <game | yaw> <cpi>
+/focal <sens> <old fov> <new fov>
 ```
 
 #### Supported Flags
@@ -208,63 +243,20 @@ Converts sensitivity to inch/rev(inch/360)
 #### Examples
 
 <DiscordMessages>
-  <DiscordMessage author="Anima">/inch 3 ow 1600</DiscordMessage>
+  <DiscordMessage author="Anima">/focal 0.95 90 100</DiscordMessage>
   <DiscordMessage
     author="FPSMath"
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/rev
-  </DiscordMessage>
-  <DiscordMessage author="Anima">/inch 2 0.022 800 -dp 8</DiscordMessage>
-  <DiscordMessage
-    author="FPSMath"
-    bot={true}
-    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
-  >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/rev
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.13217
   </DiscordMessage>
 </DiscordMessages>
 
 #### Aliases
 
 ```text
-inch/360, inch/rev
-```
-
-### convert
-
-Converts different sensitivities from one game or yaw value to another
-
-#### Usage
-
-```text
-/convert <sens> <input game | yaw> <output game | yaw>
-```
-
-#### Supported Flags
-
-```text
--dp <output decimal places>
-```
-
-#### Examples
-
-<DiscordMessages>
-  <DiscordMessage author="Anima">/convert 6 wz 0.022</DiscordMessage>
-  <DiscordMessage
-    author="FPSMath"
-    bot={true}
-    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
-  >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.80000
-  </DiscordMessage>
-</DiscordMessages>
-
-#### Aliases
-
-```text
-convert-sens, convertsens, convert-yaw, convertyaw
+focal-scaling,focalscailing
 ```
 
 ### fov
@@ -318,14 +310,49 @@ Finds the true vertical and horizontal FOVs for certain aspect ratio that the ga
 fov-scaling, film, fovscailing
 ```
 
-### focal
+### fovconvert
 
-Focal Length Scales a desired sensitivity between 2 fov values of the same type/ game
+Converts a FOV value from one game or film notation to another
 
 #### Usage
 
 ```text
-/focal <sens> <old fov> <new fov>
+/fovconvert <fov> <input game | FILM notation> <output game | FILM notation> <aspect ratio>
+```
+
+#### Supported Flags
+
+```text
+-dp <output decimal places>
+```
+
+#### Examples 
+
+<DiscordMessages>
+  <DiscordMessage author="Anima">/fov convert 90 source 16MF9 16:9</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 106.260
+  </DiscordMessage>
+</DiscordMessages>
+
+#### Aliases
+
+```text
+fovconvert, fov-convert, film-convert, convert-fov, filmconvert, convertfov
+```
+
+### inch
+
+Converts sensitivity to inch/rev(inch/360)
+
+#### Usage
+
+```text
+/inch <sens> <game | yaw> <cpi>
 ```
 
 #### Supported Flags
@@ -337,20 +364,28 @@ Focal Length Scales a desired sensitivity between 2 fov values of the same type/
 #### Examples
 
 <DiscordMessages>
-  <DiscordMessage author="Anima">/focal 0.95 90 100</DiscordMessage>
+  <DiscordMessage author="Anima">/inch 3 ow 1600</DiscordMessage>
   <DiscordMessage
     author="FPSMath"
     bot={true}
     avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
   >
-    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.13217
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.24724 inch/rev
+  </DiscordMessage>
+  <DiscordMessage author="Anima">/inch 2 0.022 800 -dp 8</DiscordMessage>
+  <DiscordMessage
+    author="FPSMath"
+    bot={true}
+    avatar="https://cdn.discordapp.com/avatars/792712521546465301/a8176886ccd814f17b4c5a98b62e185a.png?size=256"
+  >
+    <DiscordMention highlight={true}>Anima</DiscordMention>, 1.38582677 inch/rev
   </DiscordMessage>
 </DiscordMessages>
 
 #### Aliases
 
 ```text
-focal-scaling,focalscailing
+inch/360, inch/rev
 ```
 
 ### sens
@@ -360,7 +395,7 @@ Converts cm/rev(default), deg/mm, inch/rev, mpi to a game sensitivity
 #### Usage
 
 ```text
-sens <cm/rev | deg/mm | inch/rev | mpi > <game | yaw> <cpi>
+sens <cm/rev | deg/mm | inch/rev | mpi | arcmin> <game | yaw> <cpi>
 ```
 
 #### Supported Flags

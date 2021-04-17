@@ -15,17 +15,18 @@ Below is a shortlist of all the bot commands.
 
 **Hint**: You can click on a command to go to its full help entry.
 
-| **Command**                      | **Description **                                                                                                  |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| [`/arcmin`](./math.mdx#arcmin)   | Converts Sensitivity to arcmin                                                                                    |
-| [`/convert`](./math.mdx#convert) | Converts Different Sensitivities from one game to another                                                         |
-| [`/cm`](./math.mdx#cm)           | Converts Sensitivity to cm/rev                                                                                    |
-| [`/deg`](./math.mdx#deg)         | Converts Sensitivity to deg/mm                                                                                    |
-| [`/mpi`](./math.mdx#mpi)         | Converts Sensitivity to MPI                                                                                       |
-| [`/focal`](./math.mdx#focal)     | Focal Length Scales a desired sens between 2 fov values of the same type                                          |
-| [`/fov`](./math.mdx#fov)         | Finds the true vertical and horizontal FOVs for certain aspect ratio and game/FOV scaling method\(FILM notation\) |
-| [`/inch`](./math.mdx#inch)       | Converts Sensitivity to inch/rev                                                                                  |
-| [`/sens`](./math.mdx#sens)       | Converts cm/rev\|deg/mm\|MPI\|inch/rev to a game sensitivity default cm/rev                                       |
+| **Command**                            | **Description **                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [`/arcmin`](./math.mdx#arcmin)         | Converts Sensitivity to arcmin                                                                                    |
+| [`/convert`](./math.mdx#convert)       | Converts Different Sensitivities from one game to another                                                         |
+| [`/cm`](./math.mdx#cm)                 | Converts Sensitivity to cm/rev                                                                                    |
+| [`/deg`](./math.mdx#deg)               | Converts Sensitivity to deg/mm                                                                                    |
+| [`/mpi`](./math.mdx#mpi)               | Converts Sensitivity to MPI                                                                                       |
+| [`/focal`](./math.mdx#focal)           | Focal Length Scales a desired sens between 2 fov values of the same type                                          |
+| [`/fov`](./math.mdx#fov)               | Finds the true vertical and horizontal FOVs for certain aspect ratio and game/FOV scaling method\(FILM notation\) |
+| [`/fovconvert`](./math.mdx#fovconvert) | Converts a FOV value from one game or film notation to another                                                    |
+| [`/inch`](./math.mdx#inch)             | Converts Sensitivity to inch/rev                                                                                  |
+| [`/sens`](./math.mdx#sens)             | Converts cm/rev\|deg/mm\|MPI\|inch/rev\|arcmin to a game sensitivity default cm/rev                               |
 
 ### Utility Commands
 
@@ -47,7 +48,6 @@ For commands that accept input, you'll see keys with the following:
 - `repeat...` - means that you can provide multiple parameters as input
 
 These may be nested. Example: `[parameter1 <parameter2>]` means that the input is optional, but if you provide parameter1 then parameter2 is required. `[parameter...]` means that input is optional, and that the input can be any number of parameters.
-
 
 :::tip
 Don't worry about memorizing this as its on top of all of the command pages
