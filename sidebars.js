@@ -8,7 +8,7 @@ module.exports = {
     {
       type: "category",
       label: "Introduction",
-      items: ["welcome", "getting-started"],
+      items: ["welcome", "getting-started", "changelog"],
     },
     {
       type: "link",
