@@ -1,88 +1,88 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'FPSMath Documentation',
-  tagline: 'The best calculations for anything FPS and more',
-  url: 'https://fpsmath.animafps.xyz',
-  baseUrl: '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'AnimaFPS', // Usually your GitHub org/user name.
-  projectName: 'fpsmath-docs', // Usually your repo name.
+  title: "FPSMath Documentation",
+  tagline: "The best calculations for anything FPS and more",
+  url: "https://fpsmath.animafps.xyz",
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "AnimaFPS", // Usually your GitHub org/user name.
+  projectName: "fpsmath-docs", // Usually your repo name.
   themeConfig: {
     colorMode: {
       // "light" | "dark"
-      defaultMode: "dark"
+      defaultMode: "dark",
     },
     respectPrefersColorScheme: true,
     hideableSidebar: true,
     navbar: {
-      title: 'FPSMath',
+      title: "FPSMath",
       logo: {
-        alt: 'FPSMath\'s logo',
-        src: 'img/fpsmath.png',
+        alt: "FPSMath's logo",
+        src: "img/fpsmath.png",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
         {
-          to: 'docs/commands/overview',
-          label: 'Commands',
-          position: 'left',
+          to: "docs/commands/overview",
+          label: "Commands",
+          position: "left",
         },
         {
-          to: 'invite',
-          label: 'Invite',
-          position: 'left',
+          to: "invite",
+          label: "Invite",
+          position: "left",
         },
         {
-          href: 'https://github.com/AnimaFPS/fpsmath',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+          href: "https://github.com/AnimaFPS/fpsmath",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/',
+              label: "Getting Started",
+              to: "docs/",
             },
             {
-              label: 'Commands',
-              to: 'docs/commands/overview'
-            }
-          ],
-        },
-        {
-          title: 'Community/ Support',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/Bg2gNT35s9',
+              label: "Commands",
+              to: "docs/commands/overview",
             },
           ],
         },
         {
-          title: 'More',
+          title: "Community/ Support",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/AnimaFPS/fpsmath',
+              label: "Discord",
+              href: "https://discord.gg/Bg2gNT35s9",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/AnimaFPS/fpsmath",
             },
             {
-              label: 'Github - Docs',
-              href: 'https://github.com/AnimaFPS/fpsmath-docs'
-            }
+              label: "Github - Docs",
+              href: "https://github.com/AnimaFPS/fpsmath-docs",
+            },
           ],
         },
       ],
@@ -91,15 +91,14 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
+          customCss: [require.resolve("./src/css/custom.css")],
         },
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/animafps/fpsmath-docs/edit/main/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/animafps/fpsmath-docs/edit/main/",
         },
       },
     ],
